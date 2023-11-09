@@ -8,6 +8,10 @@
 $(call inherit-product, vendor/xiaomi/redwood-miuicamera/BoardConfig.mk)
 $(call inherit-product, vendor/xiaomi/redwood-miuicamera/vendor/vendor-vendor.mk)
 
+# Overlays
+PRODUCT_PACKAGES += \
+    MiuiCameraOverlay
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries-xiaomi.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-xiaomi.txt
