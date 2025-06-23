@@ -76,7 +76,6 @@ function blob_fixup() {
             ;;
         system/priv-app/MiuiCamera/MiuiCamera.apk)
             [ "$2" = "" ] && return 0
-            apktool_patch "${2}" "$MY_DIR/blob-patches"
             split --bytes=50M -d "$2" "$2".part
             ;;
         *)
