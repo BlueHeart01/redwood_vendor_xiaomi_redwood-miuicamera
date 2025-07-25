@@ -10,7 +10,7 @@ soong_namespace {
 
 cc_prebuilt_library_shared {
 	name: "libcamera_algoup_jni.xiaomi",
-	owner: "xiaomi/redwood-miuicamera",
+	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
@@ -26,7 +26,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libcamera_mianode_jni.xiaomi",
-	owner: "xiaomi/redwood-miuicamera",
+	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
@@ -42,7 +42,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libmicampostproc_client",
-	owner: "xiaomi/redwood-miuicamera",
+	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
@@ -59,7 +59,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
 	name: "vendor.xiaomi.hardware.campostproc@1.0_system",
 	stem: "vendor.xiaomi.hardware.campostproc@1.0",
-	owner: "xiaomi/redwood-miuicamera",
+	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
@@ -75,7 +75,7 @@ cc_prebuilt_library_shared {
 
 android_app_import {
 	name: "MiuiCamera",
-	owner: "xiaomi/redwood-miuicamera",
+	owner: "xiaomi",
 	apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
 	overrides: ["Aperture", "Camera", "Camera2", "GoogleCameraGo"],
 	certificate: "platform",
